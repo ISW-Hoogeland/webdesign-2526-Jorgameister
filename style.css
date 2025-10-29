@@ -35,6 +35,18 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+
+:root {
+ --Wit: #FFFFFF; 
+ --Cyan: #2d898B;
+ --Black: #13293D ;
+ --Emerald: #44cf6c ;
+ --font-main: "Dosis", sans-serif;
+
+
+
+}
+
 body {
   display: grid;
   grid-template-areas: 
@@ -59,4 +71,8 @@ main{
 }
 footer{
   grid-area: footer;
+}
+
+.main{
+  background-color: ;
 }
