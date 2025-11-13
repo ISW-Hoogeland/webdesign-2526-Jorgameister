@@ -50,29 +50,44 @@
 body {
   display: grid;
   grid-template-areas: 
-  "header nav"
-  "main main"
+  "header header"
+  "nav main"
   "footer footer";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 120px 1fr 60px;
+  grid-template-rows: 100px 1fr 60px;
   color: var(--text-dark);
-  background: var(--bg-light);
+  background: var(--Cyan);
   min-height: 100svh;
   font-family: var(--font-main);
+  
+  
 }
 header{
+  height:50% ;
   grid-area: header;
+  background-color: #13293D;
 }
 nav{
   grid-area: nav;
+ width: 25%;
+ height: 120%;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0; 
+  
+
 }
 main{
   grid-area: main;
+  ;
 }
 footer{
   grid-area: footer;
 }
 
 .main{
-  background-color: ;
+  background-color: var(--Wit) ;
 }
+
