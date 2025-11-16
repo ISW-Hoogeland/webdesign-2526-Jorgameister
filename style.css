@@ -41,53 +41,74 @@
  --Cyan: #2d898B;
  --Black: #13293D ;
  --Emerald: #44cf6c ;
+ --Lichte-cyan: #B7E5CD;
  --font-main: "Dosis", sans-serif;
 
 
 
 }
-
-body {
+.gridcontainer{
   display: grid;
-  grid-template-areas: 
-  "header header"
-  "nav main"
-  "footer footer";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 1fr 60px;
-  color: var(--text-dark);
-  background: var(--Cyan);
-  min-height: 100svh;
-  font-family: var(--font-main);
-  
-  
+  grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr 15fr 1fr;
+  background-color: var(--Cyan);
 }
-header{
-  height:50% ;
-  grid-area: header;
-  background-color: #13293D;
+body{
 }
-nav{
-  grid-area: nav;
- width: 25%;
- height: 120%;
-  background-color: white;
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-  margin: 0; 
-  
 
+header{
+  grid-column: span 2;
+  background-color: var(--Lichte-cyan);
+  font-family: var(--font-main);
+}
+header h1{
+  text-align: center;
+}
+
+nav{
+  grid-column: span 1;
+  border-right: 1px solid #13293D;
+  background-color: var(--Lichte-cyan);
+  border-top: 1px solid #13293D;
+  border-bottom: 1px solid #13293D;
+}
+nav li{
+padding: 10px;
+margin: 40px;
+font-size: 20px;
+font-family: var(--font-main);
 }
 main{
-  grid-area: main;
-  ;
+  grid-column: span 1;
+  background-color: var(--Cyan);
+  font-family: var(--font-main);
+  border: 1px solid var(--Black);
 }
+
+main h2{
+  text-align: center;
+  margin-top: 70px ;
+  font-size: 30px;
+}
+main p{
+  padding: 20px;
+  margin-left: 30px;
+
+  font-size: 25px;
+  width: 50%;
+}
+
 footer{
-  grid-area: footer;
+  grid-column: span 2;
+  text-align: center;
+  background-color: var(--Lichte-cyan);
+  font-family: var(--font-main);
 }
 
-.main{
-  background-color: var(--Wit) ;
+.Image{
+  float: right;
+margin-top: 200px;
+margin-right: 150px;
+width: 500px;
+  border: 5px solid var(--Black);
 }
-
